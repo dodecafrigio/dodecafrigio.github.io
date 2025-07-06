@@ -2,16 +2,22 @@
 #markdown: redcarpet
 #highlighter: pygments
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    guess_lang: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 highlighter: rouge
-paginate: 5
-language: 'en-uk'
+paginate: null
+language: 'it-IT'
 
 # Website info
 name: 'Cosmologie Digitali'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 
-short_url: 'https://dodecafrigio.github.io'
-google_analytics: UA-69281367-1
+short_url: 'dodecafrigio.github.io'
+google_analytics:
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl:
@@ -45,13 +51,13 @@ plugins: [jekyll-paginate]
 # or "master" otherwise
 safe: false
 lsi: false
-username: jekyllt
-repo: jasper
+username: dodecafrigio
+repo: dodecafrigio.github.io
 branch: master
-relative_source: ../jasper/
+relative_source: ./
 destination: ../jasper-pages/
-production_url:  https://jekyllt.github.io/jasper/
-source_url:  https://github.com/jekyllt/jasper/
+production_url:  https://dodecafrigio.github.io/
+source_url:  https://github.com/dodecafrigio/jasper/dodecafrigio.github.io/
 
 exclude:
   - README.md
