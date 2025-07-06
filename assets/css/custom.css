@@ -1,0 +1,10 @@
+.social-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.social-list li a {
+  font-size: 1.25rem;
+  color: inherit;
+}
