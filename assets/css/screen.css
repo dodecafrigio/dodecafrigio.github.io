@@ -855,7 +855,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: clamp(38px, 5vw, 76px);
+    height: clamp(38px, 5vw, 95px);
     padding: 1px 0 5px 0;
     width: auto;
 }
