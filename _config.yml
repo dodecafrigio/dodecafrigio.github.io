@@ -59,6 +59,15 @@ destination: ../jasper-pages/
 production_url:  https://dodecafrigio.github.io/
 source_url:  https://github.com/dodecafrigio/jasper/dodecafrigio.github.io/
 
+social:
+  - name: instagram
+    url: https://www.instagram.com/dodecagauge/
+    icon_class: fab fa-instagram
+
+  - name: email
+    url: mailto:l.scala.1997@gmail.com
+    icon_class: fas fa-envelope
+
 exclude:
   - README.md
   - Rakefile
