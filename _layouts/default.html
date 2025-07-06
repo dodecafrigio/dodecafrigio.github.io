@@ -28,6 +28,14 @@
     <!-- Ghost outputs important style and meta data with this tag -->
     {% include head.html %}
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p1CmPPIgk2xQ3fMpi5Q5Ea76S+oKtnmvyPe1urdv9Yo1sFBwWnI0URTl95de2sz6z6tw9QW0BhYK+hJ3lpZpQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
