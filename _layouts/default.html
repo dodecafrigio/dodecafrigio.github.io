@@ -39,6 +39,11 @@
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
+    <!-- SOCIAL BUTTONS al centro in alto -->
+    <div class="social-top">
+        {% include social.html %}
+    </div>
+    
     <!-- The blog navigation links -->
     {% include navigation.html %}
 
