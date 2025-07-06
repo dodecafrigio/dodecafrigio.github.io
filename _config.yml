@@ -2,12 +2,6 @@
 #markdown: redcarpet
 #highlighter: pygments
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter_opts:
-    guess_lang: true
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
 highlighter: rouge
 paginate: null
 language: 'it-IT'
@@ -59,15 +53,6 @@ relative_source: ./
 destination: ../jasper-pages/
 production_url:  https://dodecafrigio.github.io/
 source_url:  https://github.com/dodecafrigio/dodecafrigio.github.io/
-
-social:
-  - name: instagram
-    url: https://www.instagram.com/dodecagauge/
-    icon_class: fab fa-instagram
-
-  - name: email
-    url: mailto:l.scala.1997@gmail.com
-    icon_class: fas fa-envelope
 
 exclude:
   - README.md
