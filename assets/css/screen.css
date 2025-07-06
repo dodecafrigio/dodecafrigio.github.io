@@ -103,31 +103,6 @@ td, th{ padding: 0; }
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
 
-/* wrapper dei bottoni social, centrato e “in alto” */
-.social-top {
-  position: absolute;
-  top: 1rem;        /* distanza dal bordo superiore */
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 1000;     /* sopra gli altri elementi */
-}
-
-/* lista orizzontale di icone */
-.social-top .social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  gap: 1rem;
-}
-
-/* icone dimensione */
-.social-top .social-list li a {
-  font-size: 1.5rem;
-  color: inherit;
-}
-
 /* Import the font file with the icons in it */
 @font-face {
     font-family: "casper-icons";
