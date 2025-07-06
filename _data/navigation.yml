@@ -1,14 +1,19 @@
 - title: Home
   url: /
+  key: home
 
 - title: Chi sono
   url: /chi-sono/
+  key: chi-sono
 
 - title: Progetti
   url: /progetti/
+  key: progetti
 
 - title: Pubblicazioni
   url: /pubblicazioni/
+  key: pubblicazioni
 
 - title: CV
   url: /cv/
+  key: cv
