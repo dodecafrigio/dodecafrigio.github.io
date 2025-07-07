@@ -47,21 +47,35 @@ permalink: 404.html
 
     /* 2) Su mobile verticale sposta l’immagine sotto il testo */
     @media (max-width: 600px) {
+      /* a) Trasforma il container in colonna senza padding/margin laterali */
       .error-details {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background: transparent;
       }
-      .error-message {
-        order: 1;
-        text-align: center;
-      }
+
+      /* b) Metti l’immagine prima e togliti float/pixel bianco */
       .error-ghost {
+        order: 1;               /* PRIMA nell’ordine */
+        float: none !important; /* annulla ogni float */
+        margin: 0 auto 1rem;    /* solo margin-bottom per separazione */
+        max-width: 90%;         /* sfrutta quasi tutta la larghezza */
+        width: 100%;
+        box-sizing: border-box; /* evita overflow */
+        border: none;           /* nel caso ci fosse un bordo */
+        display: block;
+        background: transparent;
+      }
+
+      /* 3) Il messaggio scende sotto */
+      .error-message {
         order: 2;
-        float: none !important;
-        margin: 1rem auto 0;
-        /* scala rispetto alla larghezza */
-        max-width: 80%;
+        text-align: center;
+        margin: 0 1rem;         /* un po’ di padding orizzontale */
       }
     }
   </style>
