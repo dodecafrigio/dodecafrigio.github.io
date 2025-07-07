@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Curriculum Vitae"
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
