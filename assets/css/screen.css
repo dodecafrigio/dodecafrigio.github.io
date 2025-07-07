@@ -790,14 +790,24 @@ body.nav-opened .nav {
     margin-right: 6px;
 }
 
+/* Container delle icone: in fondo e centrato */
+.nav-social {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;           /* distanza tra le icone */
+}
+
+/* Dimensione e colore icone */
 .nav-icon {
-  display: inline-block;
-  margin: 0 0.5em;
-  font-size: 1.25em;
+  font-size: 1.5rem;
   color: inherit;
 }
+
 .nav-icon:hover {
-  color: #999;
+  color: #999; /* o il colore che preferisci */
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
