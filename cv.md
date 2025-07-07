@@ -3,6 +3,7 @@ layout: default
 title: "Curriculum Vitae"
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
+navigation: True
 ---
 
 # [Curriculum Vitae]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}
