@@ -1,6 +1,5 @@
 ---
-layout: default
-class: 'page-template'
+layout: author
 title: "Curriculum Vitae"
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
