@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: default
+class: 'page-template'
 title: "pubblicazioni"
 permalink: /pubblicazioni/       # opzionale, per avere URL “/about/”
 current: pubblicazioni           # deve corrispondere al key in navigation.yml
+navigation: true
 ---
 
 # Pubblicazioni Scientifiche:
