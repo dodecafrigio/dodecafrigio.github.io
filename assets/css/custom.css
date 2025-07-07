@@ -8,3 +8,6 @@
   font-size: 1.25rem;
   color: inherit;
 }
+.nav ul li::after {
+  content: none !important;
+}
