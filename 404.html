@@ -23,6 +23,26 @@ permalink: 404.html
 
     <link rel="stylesheet" type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
     <link rel="stylesheet" href="{{ site.baseurl }}assets/css/ghost.min.css" />
+
+    <style>
+        /* Override per rendere la 404-ghost responsive e più grande su desktop */
+        .error-ghost {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;     /* mai più larga del contenitore */
+          height: auto;        /* conserva proporzioni */
+
+          /* su tutti i device: da 150px a 300px basandosi su 50vw */
+          width: clamp(150px, 50vw, 300px);
+        }
+
+        /* su schermi grandi (>1024px) raddoppia la max-width a 600px */
+        @media (min-width: 1024px) {
+          .error-ghost {
+            width: clamp(150px, 30vw, 600px);
+          }
+        }
+      </style>
 </head>
 <body>
     <main role="main" id="main">
