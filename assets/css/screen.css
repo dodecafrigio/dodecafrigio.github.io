@@ -793,16 +793,16 @@ body.nav-opened .nav {
 /* Container delle icone: in fondo e centrato */
 .nav-social {
   position: absolute;
-  bottom: 3rem;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 5rem;           /* distanza tra le icone */
+  gap: 4rem;           /* distanza tra le icone */
 }
 
 /* Dimensione e colore icone */
 .nav-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: inherit;
 }
 
