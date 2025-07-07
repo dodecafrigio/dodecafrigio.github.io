@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "Curriculum Vitae"
+title: "[Curriculum Vitae]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}"
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
 ---
-
-# [Curriculum Vitae]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}
 
 **Email:** [luca.scala@uwr.edu.pl](mailto:luca.scala@uwr.edu.pl) | [l.scala.1997@gmail.com](mailto:l.scala.1997@gmail.com)  
 **ORCID:** [0000-0001-5718-323X](https://orcid.org/0000-0001-5718-323X)  
