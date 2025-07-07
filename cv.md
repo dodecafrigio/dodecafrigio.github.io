@@ -6,7 +6,7 @@ permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
 ---
 
-# Curriculum Vitae [scarica]({{ '/assets/pdf/CV-Scala-2025.pdf' | relative_url }}){: download}
+# Curriculum Vitae [scarica]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}
 
 **Email:** luca.scala@uwr.edu.pl | l.scala.1997@gmail.com  
 **ORCID:** 0000-0001-5718-323X  
