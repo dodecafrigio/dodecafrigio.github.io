@@ -1,5 +1,6 @@
 ---
 layout: page
+title: ""
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
