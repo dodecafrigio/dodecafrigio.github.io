@@ -5,8 +5,8 @@ permalink: 404.html
 ---
 
 <!doctype html>
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (gte IE 9)| IEMobile |!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="it"><![endif]-->
+<!--[if (gte IE 9)| IEMobile |!(IE)]><!--><html class="no-js" lang="it"><!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -33,8 +33,8 @@ permalink: 404.html
                         <section class="error-details">
                             <img
                                     class="error-ghost"
-                                    src="{{ site.baseurl }}assets/images/404.png"
-                                    srcset="{{ site.baseurl }}assets/images/404.png"/>
+                                    src="{{ '/assets/images/404.png' | relative_url }}"
+                                    srcset="{{ '/assets/images/404.png' | relative_url }}"/>
                             <section class="error-message">
                                 <h1 class="error-code">404</h1>
                                 <h2 class="error-description">
@@ -42,7 +42,7 @@ permalink: 404.html
                                 <p class="error-subtext">
                                     La pagina che cerchi non esiste o è stata spostata.
                                 </p>
-                                <a class="error-link" href="{{ site.baseurl }}">
+                                <a class="error-link" href="{{ '/' | relative_url }}">
                                     Torna alla homepage →  
                                 </a>
                             </section>
