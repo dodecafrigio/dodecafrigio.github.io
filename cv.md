@@ -6,11 +6,19 @@ permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
 ---
 
+<h1 class="post-title">
+  Curriculum Vitae 
+  <a href="{{ '/assets/pdf/CV-Scala-2025.pdf' | relative_url }}"
+     target="_blank" download>
+    <i class="fa fa-file-pdf"></i>
+  </a>
+</h1>
+
 # Curriculum Vitae [scarica]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}
 
 **Email:** luca.scala@uwr.edu.pl | l.scala.1997@gmail.com  
 **ORCID:** 0000-0001-5718-323X  
-**Gruppo di ricerca:** [fhassler.de/group](https://www.fhassler.de/group)  
+**Gruppo di ricerca:** [fhassler.de](https://www.fhassler.de/group)  
 
 ## Esperienza lavorativa
 
