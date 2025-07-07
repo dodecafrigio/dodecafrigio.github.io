@@ -33,13 +33,13 @@ permalink: 404.html
           height: auto;        /* conserva proporzioni */
 
           /* su tutti i device: da 150px a 300px basandosi su 50vw */
-          width: clamp(150px, 50vw, 300px);
+          width: clamp(100px, 50vw, 250px);
         }
 
         /* su schermi grandi (>1024px) raddoppia la max-width a 600px */
         @media (min-width: 1024px) {
           .error-ghost {
-            width: clamp(150px, 30vw, 600px);
+            width: clamp(100px, 30vw, 500px);
           }
         }
       </style>
