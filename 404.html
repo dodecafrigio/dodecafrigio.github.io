@@ -24,25 +24,47 @@ permalink: 404.html
     <link rel="stylesheet" type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
     <link rel="stylesheet" href="{{ site.baseurl }}assets/css/ghost.min.css" />
 
-    <style>
-        /* Override per rendere la 404-ghost responsive e più grande su desktop */
-        .error-ghost {
-          display: block;
-          margin: 0 auto;
-          max-width: 100%;     /* mai più larga del contenitore */
-          height: auto;        /* conserva proporzioni */
+    <head>
+  …
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/ghost.min.css" />
 
-          /* su tutti i device: da 150px a 300px basandosi su 50vw */
-          width: clamp(100px, 50vw, 250px);
-        }
+  <style>
+    /* 1) Scaling responsive e ingrandimento su desktop */
+    .error-ghost {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      /* da 100px a 250px su tutti i device */
+      width: clamp(100px, 50vw, 250px);
+    }
+    @media (min-width: 1024px) {
+      .error-ghost {
+        /* da 100px a 500px su schermi grandi */
+        width: clamp(100px, 30vw, 500px);
+      }
+    }
 
-        /* su schermi grandi (>1024px) raddoppia la max-width a 600px */
-        @media (min-width: 1024px) {
-          .error-ghost {
-            width: clamp(100px, 30vw, 500px);
-          }
-        }
-      </style>
+    /* 2) Su mobile verticale sposta l’immagine sotto il testo */
+    @media (max-width: 600px) {
+      .error-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .error-message {
+        order: 1;
+        text-align: center;
+      }
+      .error-ghost {
+        order: 2;
+        float: none !important;
+        margin: 1rem auto 0;
+        /* scala rispetto alla larghezza */
+        max-width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
     <main role="main" id="main">
