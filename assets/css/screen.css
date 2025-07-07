@@ -790,6 +790,15 @@ body.nav-opened .nav {
     margin-right: 6px;
 }
 
+.nav-icon {
+  display: inline-block;
+  margin: 0 0.5em;
+  font-size: 1.25em;
+  color: inherit;
+}
+.nav-icon:hover {
+  color: #999;
+}
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
