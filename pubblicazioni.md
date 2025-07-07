@@ -18,9 +18,9 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 
 # Pubblicazioni Artistiche:
 
-- “[Questioni Celesti](https://calvariorivista.it/questioni-celesti-racconto-di-luca-scala/)”, Calvario Rivista, 2025.
+- “[Questioni celesti](https://calvariorivista.it/questioni-celesti-racconto-di-luca-scala/)”, Calvario Rivista, 2025.
 
-- “Gawayne and the Green Rhyzome”, longlistato per l'*Ink of Ages Fiction Prize*, 2024.
+- “Gawayne and the green rhyzome”, longlistato per l'*Ink of Ages Fiction Prize*, 2024.
 
 - “[Bixiecut Rosso](https://open.spotify.com/episode/7a1LustUVuqCkqd9rsbB4c?si=eb2a91a8b0d8457c)”, secondo classificato al contest *Fiabe Pasticciate*, pubblicato su spotify come podcast recitato in *Fiabe Pasticciate*, Podcastory, 2024.
 
@@ -28,9 +28,9 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 
 - “Storia dell’Ira e di chi ne perì”, pubblicato in *Racconti Fantasy 2023*, Historica edizioni, 2023.
 
-- “Il Rosso dei Frutti sui Rami”, pubblicato in *Emozioni d’Inverno*, Rudis edizioni, 2023.
+- “Il rosso dei frutti sui rami”, pubblicato in *Emozioni d’Inverno*, Rudis edizioni, 2023.
 
-- “Storia di un Castello e del Suo Uovo”, pubblicato in *Racconti Campani 2023*, Historica edizioni, 2023.
+- “Storia di un castello e del suo uovo”, pubblicato in *Racconti Campani 2023*, Historica edizioni, 2023.
 
 - “Storia del baule e di chi ne fa la guardia”, pubblicato in *Racconti Fantasy Classic 2022*, Historica edizioni, 2022.
 
