@@ -10,12 +10,12 @@ language: 'it-IT'
 name: 'Cosmologie Digitali'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 
-url: https://dodecafrigio.github.io
-short_url: 'dodecafrigio.github.io'
+url: "https://dodecafrigio.github.io"
+short_url: "dodecafrigio.github.io"
 google_analytics:
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl:
+baseurl: ""
 
 # Permalinks
 permalink: /:title
