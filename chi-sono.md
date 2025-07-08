@@ -14,8 +14,8 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-header.main-header .post-title,
-header.main-header .page-title {
+header.post-header .post-title,
+header.post-header .page-title {
   display: none !important;
 }
   
