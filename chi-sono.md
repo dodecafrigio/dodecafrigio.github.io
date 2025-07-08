@@ -19,18 +19,16 @@ header.post-header .page-title {
   display: none !important;
 }
   
-header.main-header.post-head,
-header.main-header.has-cover {
+header.main-header post-head {
   position: relative;
   overflow: visible;
 }
 
-header.main-header post-head.has-cover {
+header.main-header post-head {
   background: url('{{ page.cover | relative_url }}') center/cover no-repeat;
 }
 
-header.main-header.post-head::after,
-header.main-header.has-cover::after {
+header.main-header post-head::after {
   content: "";
   position: absolute;
   bottom: -60px;
