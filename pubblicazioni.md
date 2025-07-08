@@ -4,6 +4,8 @@ title: "Pubblicazioni"
 permalink: /pubblicazioni/       # opzionale, per avere URL “/about/”
 current: pubblicazioni           # deve corrispondere al key in navigation.yml
 navigation: true
+cover:  /assets/images/cover1.jpg
+logo:   /assets/images/nahui-logo.png
 ---
 
 <!-- 1) Carico i CSS delle icone -->
