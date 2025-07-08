@@ -1,6 +1,6 @@
 ---
 layout: author
-author: luca
+author: chi-sono
 title: "Chi sono"
 permalink: /chi-sono/       # opzionale, per avere URL “/about/”
 current: chi-sono           # deve corrispondere al key in navigation.yml
