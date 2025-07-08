@@ -40,6 +40,17 @@ class: 'page-template'
     header.main-header.post-head h1.post-title {
       display: block !important;
     }
+
+    .post-content {
+      text-align: justify;
+      text-justify: inter-word;
+      word-spacing: 0.05em;    /* regola gli spazi */
+      line-height: 1.6;        /* migliora la leggibilità */
+      -webkit-hyphens: auto;
+         -moz-hyphens: auto;
+              hyphens: auto;
+    }
+
 </style>
 
 <header class="main-header post-head {% if page.cover %}" style="background-image: url('{{ page.cover | relative_url }}'){% else %}no-cover{% endif %}">
