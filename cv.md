@@ -4,6 +4,8 @@ title: "Curriculum Vitae"
 permalink: /cv/
 current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
+cover: 'assets/images/cover1.jpg'
+logo: 'assets/images/nahui-logo.png'
 ---
 
 <!-- 1) Inline CSS custom per il modal-gallery -->
