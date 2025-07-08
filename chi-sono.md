@@ -11,13 +11,8 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-header.main-header post-head {
-  position: relative;
-  overflow: visible;
-}
-
-header.main-header post-head {
-  background: url('{{ page.cover | relative_url }}') center/cover no-repeat;
+header.main-header.post-head h1.post-title {
+  display: none !important;
 }
 
 header.main-header post-head::after {
