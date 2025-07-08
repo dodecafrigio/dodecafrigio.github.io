@@ -1,12 +1,11 @@
 ---
 layout: page
-title: "Chi sono"
+title: "Luca Scala"
 permalink: /chi-sono/
 current: chi-sono
 navigation: true
 cover:  /assets/images/cover4.jpg
 logo:   /assets/images/nahui-logo.png
-name:   "Luca Scala"
 location: "Wrocław, Polonia; Napoli, Italia"
 bio: >-
   A paranormal expert and his daughter bunk in an abandoned house
@@ -46,10 +45,32 @@ header.main-header.has-cover::after {
   font-size: 1.75rem;
   font-weight: bold;
 }
+  
+  /* icona + testo della location, centrati e color bio */
+.profile-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;            /* stesso colore usato per la bio */
+  font-size: 1rem;
+  margin: 0.5rem auto 2rem;
+  text-align: center;
+}
+
+/* la classe .fas di Font Awesome già contiene font-family;
+   nel caso servisse puoi aggiustare la dimensione dell’icona: */
+.profile-location .fa-map-marker-alt {
+  font-size: 1.2rem;
+}
 </style>
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
-<h1 class="profile-title">{{ page.name }}</h1>
+<h1 class="profile-title">{{ page.title }}</h1>
+
+<div class="profile-location">
+  <i class="fas fa-map-marker-alt"></i>
+  {{ page.location }}
+</div>
 
 <!-- 6) Bio -->
 <section class="author-bio inner">
