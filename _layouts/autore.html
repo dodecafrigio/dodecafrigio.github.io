@@ -47,7 +47,7 @@ class: 'page-template'
     color: #fff !important;
     text-align: center !important;
     width: 90% !important;
-    font-size: 3.5rem !important;
+    font-size: clamp(1.5rem, 5vw, 5rem);
     line-height: 1.2 !important;
     z-index: 5 !important;
     display: block !important;
@@ -63,9 +63,6 @@ class: 'page-template'
       width: 180px;
       height: 180px;
     }
-    header.main-header.post-head h1.post-title {
-      font-size: 5rem;
-    }
   }
   @media (max-width: 500px) {
     header.main-header.post-head {
@@ -75,9 +72,6 @@ class: 'page-template'
       bottom: -70px;
       width: 140px;
       height: 140px;
-    }
-    header.main-header.post-head h1.post-title {
-      font-size: 4rem;
     }
   }
 </style>
