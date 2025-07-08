@@ -47,6 +47,7 @@ navigation: True
   cursor: pointer;
   padding: 0.5rem;
   line-height: 1;
+  z-index: 10; /* porta i bottoni in primo piano */
 }
 .modal-close { top: 1rem; right: 1rem; }
 .modal-prev  { top: 50%; left: 1rem; transform: translateY(-50%); }
@@ -147,10 +148,7 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 
 **2025**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2025 della conferenza “Integrability, Dualities and Deformations”.  
-- Borsa di studio **“Nagroda Santander dla studentów i doktorantów UWr 2025”** per meriti scientifici, artistici e sociali.
-  <a href="#" class="modal-open" data-modal="modal-santander">
-    (clicca per vedere il premio)
-  </a>
+- Borsa di studio <a href="#" class="modal-open" data-modal="modal-santander"> **“Nagroda Santander dla studentów i doktorantów UWr 2025”** </a> per meriti scientifici, artistici e sociali.
 
 **2024**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2024 del “Workshop on Noncommutative and Generalized Geometry in String theory, Gauge theory and Related Physical Models”.
