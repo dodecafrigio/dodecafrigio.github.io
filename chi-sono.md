@@ -11,6 +11,11 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
+header.main-header.post-head {
+  position: relative !important;
+  overflow: visible !important;
+  padding-bottom: 80px;              /* spazio in basso per mostrare metà cerchio */
+}  
 header.main-header.post-head::after {
   content: "";
   position: absolute;
@@ -27,6 +32,29 @@ header.main-header.post-head::after {
   z-index: 10;
 }
 
+@media only screen and (max-width: 900px) {
+  header.main-header.post-head {
+    padding-bottom: 60px;
+  }
+  header.main-header.post-head::after {
+    width: 90px;
+    height: 90px;
+    bottom: -45px;
+  }
+}
+
+/* 4) Mobile e schermi stretti */
+@media only screen and (max-width: 500px) {
+  header.main-header.post-head {
+    padding-bottom: 60px;
+  }
+  header.main-header.post-head::after {
+    width: 70px;
+    height: 70px;
+    bottom: -35px;
+  }
+}
+  
 .profile-title {
   display: block;
   margin: 2rem auto 1rem;  /* distanza sopra e sotto */
