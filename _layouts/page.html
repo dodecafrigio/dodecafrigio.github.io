@@ -11,6 +11,10 @@ class: 'page-template'
 <!-- #post -->
 
 <style>
+    header.post-header .post-title,
+    header.post-header .page-title {
+        display: none !important;
+    }
 /* 2.1) Rendo il header contenitore posizionato */
     header.main-header.post-head {
       position: relative;
@@ -27,7 +31,7 @@ class: 'page-template'
       color: #fff !important;
       text-align: center;
       width: 90%;         /* un po’ di padding orizzontale */
-      font-size: 5rem;    /* regola a tuo piacere */
+      font-size: 4rem;    /* regola a tuo piacere */
       line-height: 1.2;
       z-index: 2;
     }
