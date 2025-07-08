@@ -14,24 +14,6 @@ bio: >-
 assets: /assets/images/luca.jpg
 ---
 
-<!-- Featured header -->
-<header
-  class="main-header author-head{% if page.cover %} has-cover{% endif %}"
-  {% if page.cover %}
-    style="background-image:url({{ page.cover | relative_url }});"
-  {% endif %}>
-  <nav class="main-nav overlay clearfix">
-    {% if page.logo %}
-      <a class="blog-logo" href="{{ "/" | relative_url }}">
-        <img src="{{ page.logo | relative_url }}" alt="Logo" />
-      </a>
-    {% endif %}
-    {% if page.navigation %}
-      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-    {% endif %}
-  </nav>
-</header>
-
 <!-- Author profile -->
 <section class="author-profile inner">
   {% if page.assets %}
