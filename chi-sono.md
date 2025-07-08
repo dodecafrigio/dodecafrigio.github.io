@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: author
 title: "Chi Sono"
 permalink: /chi-sono/
 current: chi-sono
@@ -9,23 +9,6 @@ logo:   /assets/images/nahui-logo.png
 location: "Wrocław, Polonia; Napoli, Italia"
 assets: /assets/images/luca.jpg
 ---
-
-<header
-  class="main-header post-head{% if page.cover %} has-cover{% endif %}"
-  {% if page.cover %}
-    style="background-image: url('{{ page.cover | relative_url }}')"
-  {% endif %}>
-  
-  <!-- inserisci subito qui l'avatar -->
-  <div class="header-avatar">
-    <img src="{{ page.assets | relative_url }}" alt="Avatar di {{ page.title }}">
-  </div>
-  
-  <h1 class="post-title">{{ page.title }}</h1>
-  <nav class="main-nav{% if page.cover %} overlay{% endif %} clearfix"> 
-  </nav>
-</header>
-
 <style>
 /* container posizionato */
 header.main-header.post-head.has-cover {
