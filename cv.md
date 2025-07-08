@@ -6,6 +6,8 @@ current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/custom-cv.css' | relative_url }}" />
+
 <div class="download-cv" style="text-align:center; margin-bottom:2rem;">
   <a
     href="{{ '/assets/pdf/CV-Scala-2025.pdf' | relative_url }}"
@@ -130,3 +132,5 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
     <button class="modal-next" aria-label="Successivo">&#10095;</button>
   </div>
 </div>
+
+<script src="{{ '/assets/js/custom-cv.js' | relative_url }}"></script>
