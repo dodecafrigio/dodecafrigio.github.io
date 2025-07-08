@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Luca Scala"
+title: "Chi Sono"
 permalink: /chi-sono/
 current: chi-sono
 navigation: true
@@ -11,10 +11,6 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-header.main-header.post-head h1.post-title {
-  display: none !important;
-}
-
 header.main-header post-head::after {
   content: "";
   position: absolute;
@@ -60,7 +56,7 @@ header.main-header post-head::after {
 </style>
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
-<h1 class="profile-title">{{ page.title }}</h1>
+<h1 class="profile-title">Luca Scala</h1>
 
 <div style="text-align:center">
   <div class="profile-location">
