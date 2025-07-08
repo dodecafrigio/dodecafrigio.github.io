@@ -4,79 +4,77 @@ title: "Chi sono"
 permalink: /chi-sono/
 current: chi-sono
 navigation: true
-cover:   "/assets/images/cover4.jpg"
-logo:    "/assets/images/ghost.png"
-name:    "Luca Scala"
+
+# campi “author‐style”
+cover:  /assets/images/cover4.jpg
+logo:   /assets/images/ghost.png
+name:   "Luca Scala"
 location: "Wrocław, Polonia; Napoli, Italia"
 bio: >-
-  Dottorando in geometria generalizzata e approcci di double field theory
-  alle dualità nella teoria delle stringhe. Supervisori:
-  Jerzy Kowalski-Glikman e Falk Hassler.
-assets:  "/assets/images/luca.jpg"
-url:     "fhassler.de"
+  A paranormal expert and his daughter bunk in an abandoned house
+  populated by 3 mischievous ghosts and a friendly one, Casper.
+assets: /assets/images/luca.jpg
+url:    "fhassler.de"
 url_full: "https://www.fhassler.de/group"
 ---
-<style>
-/* 1) Nascondi l’header standard (non author-head) */
-header.main-header:not(.author-head) {
-  display: none !important;
-}
 
-/* 2) Prepara l’author‐header */
-header.main-header.author-head {
-  position: relative;
-  height: 300px;
-  background: url('{{ page.cover | relative_url }}') center/cover no-repeat;
-  overflow: visible;    /* <— fondamentale per far uscire l’avatar */
-  margin-bottom: 80px;  /* spazio per avatar */
-}
+<!-- Featured header -->
+<header
+  class="main-header author-head{% if page.cover %} has-cover{% endif %}"
+  {% if page.cover %}
+    style="background-image:url({{ page.cover | relative_url }});"
+  {% endif %}>
+  <nav class="main-nav overlay clearfix">
+    {% if page.logo %}
+      <a class="blog-logo" href="{{ "/" | relative_url }}">
+        <img src="{{ page.logo | relative_url }}" alt="Logo" />
+      </a>
+    {% endif %}
+    {% if page.navigation %}
+      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+    {% endif %}
+  </nav>
+</header>
 
-/* 3) Avatar dentro header */
-.author-avatar {
-  position: absolute;
-  bottom: -60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
-  background: url('{{ page.assets | relative_url }}') center/cover no-repeat;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 10;
-}
+<!-- Author profile -->
+<section class="author-profile inner">
+  {% if page.assets %}
+    <figure class="author-image">
+      <div
+        class="img"
+        style="background-image:url({{ page.assets | relative_url }});">
+        <span class="hidden">{{ page.name }}'s Picture</span>
+      </div>
+    </figure>
+  {% endif %}
+  <h1 class="author-title">{{ page.name }}</h1>
+  {% if page.bio %}
+    <div style="text-align: justify; text-justify: inter-word;">
+      <h2 class="author-bio">{{ page.bio }}</h2>
+    </div>
+  {% endif %}
+  <div class="author-meta">
+    {% if page.location %}
+      <span class="author-location icon-location">{{ page.location }}</span>
+    {% endif %}
+    {% if page.url %}
+      <span class="author-link icon-link">
+        <a href="{{ page.url_full }}">{{ page.url }}</a>
+      </span>
+    {% endif %}
+  </div>
+</section>
 
-/* 4) Allineamento titolo e bio */
-.section-wrapper {
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  text-align: center;
-}
-.author-profile.inner {
-  padding-top: 20px;  /* lascia respiro sotto avatar */
-}
-.author-title {
-  margin-top: 0;
-  font-size: 1.8rem;
-}
-.author-bio {
-  margin: 1rem 0;
-  color: #555;
-  line-height: 1.6;
-}
-.author-meta {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  color: #666;
-  font-size: .95rem;
-}
-.author-meta span,
-.author-meta a {
-  display: flex;
-  align-items: center;
-  gap: .4rem;
-  text-decoration: none;
-  color: inherit;
-}
-.auth
+<!-- Eventuale lista post -->
+<main id="content" class="content" role="main">
+  {% assign my_posts = site.posts | where: "author", "chi-sono" %}
+  {% for post in my_posts %}
+    <article class="post">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%d %B %Y" }}
+      </time>
+      {{ post.excerpt }}
+    </article>
+  {% endfor %}
+</main>
