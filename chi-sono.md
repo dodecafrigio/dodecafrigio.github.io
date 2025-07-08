@@ -19,27 +19,27 @@ header.post-header .page-title {
   display: none !important;
 }
   
-header.post-header {
+header.main-header.post-head{
   position: relative;
-  overflow: visible;    
+  overflow: visible;
 }
 
-header.post-header.has-cover {
+header.main-header post-head.has-cover {
   background: url('{{ page.cover | relative_url }}') center/cover no-repeat;
 }
 
-header.post-header.has-cover::after {
+header.main-header.post-head::after{
   content: "";
   position: absolute;
-  bottom: -60px;         
+  bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;          
+  width: 120px;
   height: 120px;
   background: url('{{ page.assets | relative_url }}')
               center/cover no-repeat;
   border-radius: 50%;
-  border: 4px solid #fff;        
+  border: 4px solid #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 10;
 }
