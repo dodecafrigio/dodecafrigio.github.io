@@ -11,40 +11,48 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-/* 1) Selettore super‐specifico per la pagina "Chi Sono" */
-  .page-template header.main-header.post-head::after {
-    /* 2) forza ogni proprietà */
-    display: block !important;
-    content: "" !important;
-    position: absolute !important;
-    bottom: -60px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 120px !important;
-    height: 120px !important;
-    background: url('{{ page.assets | relative_url }}') center/cover no-repeat !important;
-    border-radius: 50% !important;
-    border: 4px solid #fff !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-    z-index: 1000 !important;
-  }
+header.main-header.post-head {
+  position: relative !important;
+  overflow: visible !important;
+  padding-bottom: 80px;              /* spazio in basso per mostrare metà cerchio */
+}  
+header.main-header.post-head::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: url('{{ page.assets | relative_url }}')
+              center/cover no-repeat;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 10;
+}
 
-  /* 3) Media query per schermi medi e piccoli */
-  @media (max-width: 900px) {
-    .page-template header.main-header.post-head::after {
-      bottom: -45px !important;
-      width: 90px !important;
-      height: 90px !important;
-    }
+@media only screen and (max-width: 900px) {
+  header.main-header.post-head {
+    padding-bottom: 60px;
   }
-  @media (max-width: 500px) {
-    .page-template header.main-header.post-head::after {
-      bottom: -35px !important;
-      width: 70px !important;
-      height: 70px !important;
-    }
+  header.main-header.post-head::after {
+    width: 90px;
+    height: 90px;
+    bottom: -45px;
   }
-  
+}
+/* 4) Mobile e schermi stretti */
+@media only screen and (max-width: 500px) {
+  header.main-header.post-head {
+    padding-bottom: 60px;
+   }
+  header.main-header.post-head::after {
+    width: 70px;
+    height: 70px;
+    bottom: -35px;
+     }
+}
 .profile-title {
   display: block;
   margin: 2rem auto 1rem;  /* distanza sopra e sotto */
