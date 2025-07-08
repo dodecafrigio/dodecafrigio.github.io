@@ -6,7 +6,23 @@ current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
 ---
 
-# [Curriculum Vitae]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}
+<h1 class="post-title">
+  📄 Curriculum Vitae
+</h1>
+
+<div class="download-cv" style="text-align:center; margin-bottom:2rem;">
+  <a
+    href="{{ '/assets/pdf/CV-Scala-2025.pdf' | relative_url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="font-size:1.25rem; text-decoration:none;"
+  >
+    <i class="fas fa-file-download"></i>
+    &nbsp;Scarica qui il CV
+  </a>
+</div>
+
+<!--# [Curriculum Vitae]({{ '/assets/CV-Scala-2025.pdf' | relative_url }}){: download}-->
 
 **Email:** [luca.scala@uwr.edu.pl](mailto:luca.scala@uwr.edu.pl) | [l.scala.1997@gmail.com](mailto:l.scala.1997@gmail.com)  
 **ORCID:** [0000-0001-5718-323X](https://orcid.org/0000-0001-5718-323X)  
@@ -87,7 +103,7 @@ navigation: True
 
 - **2025**  
   - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2025 della conferenza “Integrability, Dualities and Deformations”.  
-  - Borsa di studio **“Nagroda Santander per studenti e dottorandi UWr 2025”** per meriti scientifici, artistici e sociali.
+  - Borsa di studio **“Nagroda Santander dla studentów i doktorantów UWr 2025”** per meriti scientifici, artistici e sociali.
 
 - **2024**  
   - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2024 del “Workshop on Noncommutative and Generalized Geometry in String theory, Gauge theory and Related Physical Models”.
