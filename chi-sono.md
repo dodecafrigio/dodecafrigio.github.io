@@ -14,6 +14,10 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
+.page-title {
+  display: none !important;
+}
+  
 header.main-header {
   position: relative;
   overflow: visible;    
@@ -48,11 +52,6 @@ header.main-header.has-cover::after {
   color: #333;
   line-height: 1.2;
 }
-  
-  /* nasconde il titolo predefinito in alto a sinistra */
-.page-title {
-  display: none !important;
-}
 
   /* icona + testo della location, centrati e color bio */
 .profile-location {
@@ -60,7 +59,7 @@ header.main-header.has-cover::after {
   align-items: center;
   gap: .5rem;
   color: #555;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 auto 2rem;       /* top=0, bottom=2rem, auto orizz. */
   text-align: center;
 }
