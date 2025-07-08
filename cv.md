@@ -74,7 +74,7 @@ Per l’elenco completo delle **pubblicazioni**, salta su [Pubblicazioni]({{ '/p
 **Inspire:** [Luca Scala](https://inspirehep.net/authors/2086448)     
 <a href="#" class="modal-open" data-modal="modal-group">**Gruppo di ricerca:**</a> [fhassler.de](https://www.fhassler.de/group)  
 
-## Esperienza lavorativa
+## Esperienze lavorative
 
 **2022 – in corso**  
 - <a href="#" class="modal-open" data-modal="modal-uwr">**Dottorando presso l’Università di Wrocław**</a>, Wrocław (Polonia).  
