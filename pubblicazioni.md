@@ -6,7 +6,17 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 navigation: true
 ---
 
-<!-- 1) CSS inline per header con icone dimensionate -->
+<!-- 1) Carico i CSS delle icone -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css"
+/>
+
+<!-- 2) CSS inline per l’header con titoli + icone a destra -->
 <style>
 .pub-header {
   display: flex;
@@ -19,44 +29,32 @@ navigation: true
   margin: 0;
   font-size: 2rem;
 }
-.pub-header.no-icons .pub-icons { display: none; }
 .pub-icons a {
   display: inline-block;
   margin-left: 0.75rem;
+  color: inherit;
 }
-.pub-icons img {
+/* ORCID e INSPIRE-HEP ingranditi */
+.pub-icons .fa-orcid,
+.pub-icons .ai-inspire {
+  font-size: 2rem;
   vertical-align: middle;
-  width: auto;
-}
-/* ORCID logo leggermente più grande */
-.pub-icons .orcid-logo {
-  height: 2rem;
-}
-/* INSPIRE-HEP logo dimensionato in modo simile */
-.pub-icons .inspire-logo {
-  height: 2rem;
 }
 </style>
 
-<!-- 2) Header “Pubblicazioni Scientifiche” + icone -->
+<!-- 3) Header “Pubblicazioni Scientifiche” + icone -->
 <div class="pub-header">
   <h1>Pubblicazioni Scientifiche:</h1>
   <div class="pub-icons">
-    <!-- ORCID (logo officiale da Wikimedia Commons) -->
+    <!-- ORCID (Font-Awesome) -->
     <a href="https://orcid.org/0000-0001-5718-323X"
-       target="_blank" rel="noopener">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/70/ORCID_logo.svg"
-        alt="ORCID iD"
-        class="orcid-logo" />
+       target="_blank" rel="noopener" aria-label="ORCID iD">
+      <i class="fab fa-orcid"></i>
     </a>
-    <!-- INSPIRE-HEP (icon da Academicons via jsDelivr) -->
+    <!-- INSPIRE-HEP (Academicons) -->
     <a href="https://inspirehep.net/authors/2086448"
-       target="_blank" rel="noopener">
-      <img
-        src="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@v1.9.1/svg/ai-inspire.svg"
-        alt="INSPIRE-HEP"
-        class="inspire-logo" />
+       target="_blank" rel="noopener" aria-label="INSPIRE-HEP">
+      <i class="ai ai-inspire"></i>
     </a>
   </div>
 </div>
