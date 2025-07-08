@@ -10,10 +10,50 @@ location: "Wrocław, Polonia; Napoli, Italia"
 assets: /assets/images/luca.jpg
 ---
 
-<div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-  <h1 class="profile-title" style="font-size: 4rem; margin: 0 0 0.5rem;">
-    Luca Scala
-  </h1>
+<style>
+  /* 1) Definisco il diametro avatar via variabile e lo adatto per i breakpoint */
+  :root {
+    --avatar-diameter: 120px;
+  }
+  @media (max-width: 900px) {
+    :root {
+      --avatar-diameter: 90px;
+    }
+  }
+  @media (max-width: 500px) {
+    :root {
+      --avatar-diameter: 70px;
+    }
+  }
+
+  /* 2) Blocchetto titolo + location, sempre posizionato sotto l’avatar */
+  .profile-block {
+    text-align: center;
+    /* metà dell’avatar + 1rem di gap */
+    margin-top: calc(var(--avatar-diameter) / 2 + 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .profile-block .profile-title {
+    font-size: 4rem;
+    margin: 0 0 0.5rem;
+    display: block;
+  }
+
+  .profile-block .profile-location {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: #555;
+    font-size: 1.5rem;
+  }
+  .profile-block .profile-location .fa-map-marker-alt {
+    font-size: 2rem;
+  }
+</style>
+
+<div class="profile-block">
+  <h1 class="profile-title">Luca Scala</h1>
   <div class="profile-location">
     <i class="fas fa-map-marker-alt"></i>{{ page.location }}
   </div>
