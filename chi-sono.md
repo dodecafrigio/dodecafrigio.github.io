@@ -59,7 +59,6 @@ assets: /assets/images/luca.jpg
   </div>
 </div>
 
-<section class="post-content" style="text-align: justify; text-justify: inter-word;">
 Ciao! Se sei finitə su questa pagina ti chiederai chi io sia. Piacere, sono Luca, nato a Napoli nel 1997 e ora dottorando in fisica teorica a Wrocław, in Polonia. Lavoro a parte, mi interesso di filosofia, mitologia e scrittura e adoro viaggiare. Ultimamente mi sto divertendo a scrivere un po’ di cosette che puoi trovare listate su [pubblicazioni](/pubblicazioni/).
   
 La ragione che mi ha portato a passare notti insonni a combattere contro GitHub (sì, mi dispiace ma non mi piace programmare) e aprire questo sito è il desiderio di creare connessioni interessanti con nuove persone.
@@ -71,4 +70,3 @@ Se ti interessa sapere di più sui miei progetti di ricerca, sia in campo scient
 Se hai domande, idee interessanti per collaborare o suggerimenti di sorta, contattami pure pigiando sulle iconcine che trovi in fondo al menù!
 
 P.S. il logo del sito è ispirato al Quinto Sole della mitologia Nahuatl, [Nahui Ollin](https://en.wikipedia.org/wiki/Nahui_Ollin)!
-</section>
