@@ -6,7 +6,7 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 navigation: true
 ---
 
-<!-- 1) Inline CSS per header con icone a destra -->
+<!-- 1) CSS inline per header con icone dimensionate -->
 <style>
 .pub-header {
   display: flex;
@@ -19,33 +19,44 @@ navigation: true
   margin: 0;
   font-size: 2rem;
 }
+.pub-header.no-icons .pub-icons { display: none; }
 .pub-icons a {
   display: inline-block;
   margin-left: 0.75rem;
 }
 .pub-icons img {
-  height: 1.5rem;
   vertical-align: middle;
+  width: auto;
+}
+/* ORCID logo leggermente più grande */
+.pub-icons .orcid-logo {
+  height: 2rem;
+}
+/* INSPIRE-HEP logo dimensionato in modo simile */
+.pub-icons .inspire-logo {
+  height: 2rem;
 }
 </style>
 
-<!-- 2) Header “Pubblicazioni Scientifiche” + icone ORCID & INSPIRE -->
+<!-- 2) Header “Pubblicazioni Scientifiche” + icone -->
 <div class="pub-header">
   <h1>Pubblicazioni Scientifiche:</h1>
   <div class="pub-icons">
-    <!-- ORCID -->
+    <!-- ORCID (logo officiale da Wikimedia Commons) -->
     <a href="https://orcid.org/0000-0001-5718-323X"
        target="_blank" rel="noopener">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/7/70/ORCID_logo.svg"
-        alt="ORCID iD">
+        alt="ORCID iD"
+        class="orcid-logo" />
     </a>
-    <!-- INSPIRE-HEP -->
+    <!-- INSPIRE-HEP (icon da Academicons via jsDelivr) -->
     <a href="https://inspirehep.net/authors/2086448"
        target="_blank" rel="noopener">
       <img
-        src="https://cdn.jsdelivr.net/gh/inspirehep/inspirehep@master/artwork/INSPIRE_logo_Blue_BG.png"
-        alt="INSPIRE-HEP">
+        src="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@v1.9.1/svg/ai-inspire.svg"
+        alt="INSPIRE-HEP"
+        class="inspire-logo" />
     </a>
   </div>
 </div>
@@ -59,7 +70,10 @@ navigation: true
 - Lizzi, Fedele; **Scala, Luca**; Vitale, Patrizia. (2022). “Localization and observers in 𝜚-Minkowski spacetime.” Phys. Rev. D 106(2):025023. doi:10.1103/PhysRevD.106.025023. arXiv:[2205.10862](https://arxiv.org/abs/2205.10862).  
 
 
-# Pubblicazioni Artistiche:
+<div class="pub-header no-icons">
+  <h1>Pubblicazioni Artistiche:</h1>
+  <div class="pub-icons"><!-- vuoto --></div>
+</div>
 
 - “[Questioni celesti](https://calvariorivista.it/questioni-celesti-racconto-di-luca-scala/)”, Calvario Rivista, 2025.
 
