@@ -10,6 +10,15 @@ location: "Wrocław, Polonia; Napoli, Italia"
 assets: /assets/images/luca.jpg
 ---
 
+<!-- 5) Titolo centrato subito dopo il default-header -->
+<h1 class="profile-title">Luca Scala</h1>
+
+<div style="text-align:center">
+  <div class="profile-location">
+    <i class="fas fa-map-marker-alt"></i>{{ page.location }}
+  </div>
+</div>
+
 Ciao! Se sei finito su questa pagina ti chiederai chi io sia. Piacere, sono Luca, nato a Napoli nel 1997 e ora dottorando in fisica teorica a Wrocław, in Polonia. Lavoro a parte, mi interesso di filosofia, mitologia e scrittura e adoro viaggiare. Ultimamente mi sto divertendo a scrivere un po’ di cosette che puoi trovare listate su [pubblicazioni](/pubblicazioni/).
   
 La ragione che mi ha portato a passare notti insonni a combattere contro GitHub (sì, mi dispiace ma non mi piace programmare) e aprire questo sito è il desiderio di creare connessioni interessanti con nuove persone.
