@@ -6,9 +6,49 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 navigation: true
 ---
 
-# Pubblicazioni Scientifiche: 
-[**ORCID**](https://orcid.org/0000-0001-5718-323X)  
-[**INSPIRE**](https://inspirehep.net/authors/2086448)
+<!-- 1) Inline CSS per header con icone a destra -->
+<style>
+.pub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.pub-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.pub-icons a {
+  display: inline-block;
+  margin-left: 0.75rem;
+}
+.pub-icons img {
+  height: 1.5rem;
+  vertical-align: middle;
+}
+</style>
+
+<!-- 2) Header “Pubblicazioni Scientifiche” + icone ORCID & INSPIRE -->
+<div class="pub-header">
+  <h1>Pubblicazioni Scientifiche:</h1>
+  <div class="pub-icons">
+    <!-- ORCID -->
+    <a href="https://orcid.org/0000-0001-5718-323X"
+       target="_blank" rel="noopener">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/70/ORCID_logo.svg"
+        alt="ORCID iD">
+    </a>
+    <!-- INSPIRE-HEP -->
+    <a href="https://inspirehep.net/authors/2086448"
+       target="_blank" rel="noopener">
+      <img
+        src="https://cdn.jsdelivr.net/gh/inspirehep/inspirehep@master/artwork/INSPIRE_logo_Blue_BG.png"
+        alt="INSPIRE-HEP">
+    </a>
+  </div>
+</div>
 
 - **Scala, Luca**. (2024). “𝜚-Poincaré: bicrossproduct structure, ⋆-products and quantum Lie algebra.” PoS CORFU2023:255. doi:10.22323/1.463.0255. arXiv:[2408.09837](https://arxiv.org/abs/2408.09837).  
 
