@@ -6,8 +6,54 @@ current: cv           # deve corrispondere al key in navigation.yml
 navigation: True
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom-cv.css' | relative_url }}" />
+<!-- 1) Inline CSS custom per il modal-gallery -->
+<style>
+/* overlay scuro */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.active {
+  display: flex;
+}
 
+/* finestra interna */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/* bottoni */
+.modal-close,
+.modal-prev,
+.modal-next {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+}
+.modal-close { top: 1rem; right: 1rem; }
+.modal-prev  { top: 50%; left: 1rem; transform: translateY(-50%); }
+.modal-next  { top: 50%; right: 1rem; transform: translateY(-50%); }
+</style>
+
+<!-- 2) Download button -->
 <div class="download-cv" style="text-align:center; margin-bottom:2rem;">
   <a
     href="{{ '/assets/pdf/CV-Scala-2025.pdf' | relative_url }}"
@@ -101,8 +147,10 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 
 **2025**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2025 della conferenza “Integrability, Dualities and Deformations”.  
-- Borsa di studio **“[Nagroda Santander dla studentów i doktorantów UWr 2025](#)
-  {: .modal-open data-modal="modal-santander" }”** per meriti scientifici, artistici e sociali.
+- Borsa di studio **“Nagroda Santander dla studentów i doktorantów UWr 2025”** per meriti scientifici, artistici e sociali.
+  <a href="#" class="modal-open" data-modal="modal-santander">
+    (clicca per vedere il premio)
+  </a>
 
 **2024**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2024 del “Workshop on Noncommutative and Generalized Geometry in String theory, Gauge theory and Related Physical Models”.
@@ -123,14 +171,51 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 - **Gruppo di studio extracurricolare sulle fondamenta della Relatività Generale**, Napoli.  
   Supervisore: Prof. Emerito Antonio Romano (Università di Napoli “Federico II”).
 
-<div id="modal-santander" class="modal-overlay" 
-     data-images="{{ '/assets/images/santander1.jpg' | relative_url }},{{ '/assets/images/santander2.jpg' | relative_url }}">
+<!-- 3) Modal-gallery markup -->
+<div
+  id="modal-santander"
+  class="modal-overlay"
+  data-images="
+    {{ '/assets/images/santander1.jpg' | relative_url }},
+    {{ '/assets/images/santander2.jpg' | relative_url }}
+  ">
   <div class="modal-content">
     <button class="modal-close" aria-label="Chiudi">&times;</button>
-    <button class="modal-prev" aria-label="Precedente">&#10094;</button>
+    <button class="modal-prev"  aria-label="Precedente">&#10094;</button>
     <img id="modal-img" src="" alt="Immagine premio" />
-    <button class="modal-next" aria-label="Successivo">&#10095;</button>
+    <button class="modal-next"  aria-label="Successivo">&#10095;</button>
   </div>
 </div>
 
-<script src="{{ '/assets/js/custom-cv.js' | relative_url }}"></script>
+<!-- 4) Inline JS custom per apri/chiudi e frecce -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.modal-open').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var modal = document.getElementById(btn.dataset.modal);
+      var imgs  = modal.dataset.images.split(',').map(s=>s.trim());
+      var idx   = 0;
+      var imgEl = modal.querySelector('#modal-img');
+      imgEl.src = imgs[idx];
+      modal.classList.add('active');
+      modal.querySelector('.modal-prev').onclick = function() {
+        idx = (idx-1+imgs.length)%imgs.length;
+        imgEl.src = imgs[idx];
+      };
+      modal.querySelector('.modal-next').onclick = function() {
+        idx = (idx+1)%imgs.length;
+        imgEl.src = imgs[idx];
+      };
+    });
+  });
+
+  document.querySelectorAll('.modal-close, .modal-overlay').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      if (e.currentTarget.classList.contains('modal-close') || e.target === el) {
+        el.closest('.modal-overlay').classList.remove('active');
+      }
+    });
+  });
+});
+</script>
