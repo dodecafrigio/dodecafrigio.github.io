@@ -10,6 +10,27 @@ logo: '/assets/images/nahui-logo.png'
 
 <!-- 1) Inline CSS custom per il modal-gallery -->
 <style>
+ /* 1) Assicuro che l’header abbia posizione relativa */
+  header.main-header.post-head {
+    position: relative !important;
+  }
+
+  /* 2) Rendo visibile il titolo dentro la cover */
+  header.main-header.post-head h1.post-title {
+    display: block;                      /* forza il blocco */
+    position: absolute;                  /* posizione assoluta dentro l’header */
+    top: 50%;                            /* verticale al centro */
+    left: 50%;                           /* orizzontale al centro */
+    transform: translate(-50%, -50%);    /* vero centraggio */
+    color: #fff;                         /* bianco */
+    text-align: center;                  /* allinea il testo al centro */
+    width: 90%;                          /* lascia un po’ di padding ai lati */
+    z-index: 5;                          /* sopra lo sfondo cover */
+    font-size: 3rem;                     /* regola a piacere */
+    line-height: 1.2;                    
+    white-space: normal;                 /* va a capo se lungo */
+  }
+  
 /* overlay scuro */
 .modal-overlay {
   display: none;
