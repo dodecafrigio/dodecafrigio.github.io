@@ -1,58 +1,77 @@
 ---
 layout: default
-title: Author
-cover: 'assets/images/cover4.jpg'
-class: 'author-template'
-navigation: True
-label: Author
-logo: 'assets/images/ghost.png'
-current: author
+class: 'page-template'
 ---
-<!-- < default}} -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+<!-- < default -->
 
-<!-- The big featured header -->
+<!-- This is a page template. A page outputs content just like any other post, and has all the same -->
+    <!-- attributes by default, but you can also customise it to behave differently if you prefer.  -->
 
-<!-- Everything inside the #author tags pulls data from the author -->
-<!-- #author  -->
-    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-        <nav class="main-nav overlay clearfix">
-            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
-            {% if page.navigation %}
-                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            {% endif %}
-        </nav>
-    </header>
+<!-- Everything inside the #post tags pulls data from the page -->
+<!-- #post -->
 
-    <section class="author-profile inner">
-        {% for author in site.data.authors %}
-            {% if author[1].username == page.author %}
-                {% if author[1].assets %}
-                <figure class="author-image">
-                    <div class="img" style="background-image: url({{ site.baseurl }}{{ author[1].assets }})"><span class="hidden">{{ author[1].name }}'s Picture</span></div>
-                </figure>
-                {% endif %}
-                <h1 class="author-title">{{ author[1].name }}</h1>
-                {% if author[1].bio %}
-                    <div style="display:inline; text-align: justify; text-justify: inter-word;">
-                        <h2 class="author-bio">{{ author[1].bio }}</h2>
-                    </div>
-                {% endif %}
-                <div class="author-meta">
-                    {% if author[1].location %}<span class="author-location icon-location">{{ author[1].location }}</span>{% endif %}
-                    {% if author[1].url %}<span class="author-link icon-link"><a href="{{ author[1].url_full }}">{{ author[1].url }}</a></span>{% endif %}
-                    <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
-                    <span class="author-stats"><i class="icon-stats"></i>{% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }} posts{% endif %}</span>
-                </div>
-            {% endif %}
-        {% endfor %}
-    </section>
-<!-- /author -->
+<style>
+    header.post-header .post-title,
+    header.post-header .page-title {
+        display: none !important;
+    }
+/* 2.1) Rendo il header contenitore posizionato */
+    header.main-header.post-head {
+      position: relative;
+      overflow: visible;
+    }
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+/* 2.2) Sposto il titolo al centro della cover */
+    header.main-header.post-head h1.post-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      color: #fff !important;
+      text-align: center;
+      width: 90%;         /* un po’ di padding orizzontale */
+      font-size: 3.5rem;    /* regola a tuo piacere */
+      line-height: 1.2;
+      z-index: 2;
+    }
 
-    <!-- The tag below includes the post loop - partials/loop.hbs  -->
-    {% include loop.html %}
+/* 2.3) Garantisco che sia visibile se nascosto altrove */
+    header.main-header.post-head h1.post-title {
+      display: block !important;
+    }
+</style>
 
+<header class="main-header post-head {% if page.cover %}" style="background-image: url('{{ page.cover | relative_url }}'){% else %}no-cover{% endif %}">
+
+    <!-- inserisci subito qui l'avatar -->
+    <div class="header-avatar">
+        <img src="{{ page.assets | relative_url }}" alt="Avatar di {{ page.title }}">
+    </div>
+    
+    <!-- 1.1) Titolo dentro la cover -->
+    <h1 class="post-title">{{ page.title }}</h1>
+    
+    <nav class="main-nav {% if page.cover %}overlay{% endif %} clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ '/' | relative_url }}"><img src="{{ page.logo | relative_url }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+        <!-- Everything inside the #post tags pulls data from the post -->
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+
+        <section class="post-content">
+            {{ content }}
+        </section>
+
+    </article>
 </main>
+<!-- /post -->
