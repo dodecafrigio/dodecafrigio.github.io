@@ -6,7 +6,9 @@ current: pubblicazioni           # deve corrispondere al key in navigation.yml
 navigation: true
 ---
 
-# Pubblicazioni Scientifiche: [ORCID](https://orcid.org/0000-0001-5718-323X)  [INSPIRE](https://inspirehep.net/authors/2086448)
+# Pubblicazioni Scientifiche: 
+[**ORCID**](https://orcid.org/0000-0001-5718-323X)  
+[**INSPIRE**](https://inspirehep.net/authors/2086448)
 
 - **Scala, Luca**. (2024). “𝜚-Poincaré: bicrossproduct structure, ⋆-products and quantum Lie algebra.” PoS CORFU2023:255. doi:10.22323/1.463.0255. arXiv:[2408.09837](https://arxiv.org/abs/2408.09837).  
 
