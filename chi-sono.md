@@ -11,7 +11,7 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-header.main-header post-head::after {
+header.main-header.post-head::after {
   content: "";
   position: absolute;
   bottom: -60px;
