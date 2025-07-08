@@ -10,49 +10,75 @@ location: "Wrocław, Polonia; Napoli, Italia"
 assets: /assets/images/luca.jpg
 ---
 
+<header
+  class="main-header post-head{% if page.cover %} has-cover{% endif %}"
+  {% if page.cover %}
+    style="background-image: url('{{ page.cover | relative_url }}')"
+  {% endif %}>
+  
+  <!-- inserisci subito qui l'avatar -->
+  <div class="header-avatar">
+    <img src="{{ page.assets | relative_url }}" alt="Avatar di {{ page.title }}">
+  </div>
+  
+  <h1 class="post-title">{{ page.title }}</h1>
+  <nav class="main-nav{% if page.cover %} overlay{% endif %} clearfix"> 
+  </nav>
+</header>
+
 <style>
-header.main-header.post-head {
-  position: relative !important;
-  overflow: visible !important;
-  padding-bottom: 80px;              /* spazio in basso per mostrare metà cerchio */
-}  
-header.main-header.post-head::after {
-  content: "";
+/* container posizionato */
+header.main-header.post-head.has-cover {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 80px; /* spazio per il cerchio */
+}
+
+/* avatar standard */
+.header-avatar {
   position: absolute;
   bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
   width: 120px;
   height: 120px;
-  background: url('{{ page.assets | relative_url }}')
-              center/cover no-repeat;
   border-radius: 50%;
+  overflow: hidden;
   border: 4px solid #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 10;
 }
 
-@media only screen and (max-width: 900px) {
-  header.main-header.post-head {
+.header-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* tablet / medio */
+@media (max-width: 900px) {
+  header.main-header.post-head.has-cover {
     padding-bottom: 60px;
   }
-  header.main-header.post-head::after {
+  .header-avatar {
+    bottom: -45px;
     width: 90px;
     height: 90px;
-    bottom: -45px;
   }
 }
-/* 4) Mobile e schermi stretti */
-@media only screen and (max-width: 500px) {
-  header.main-header.post-head {
-    padding-bottom: 60px;
-   }
-  header.main-header.post-head::after {
+
+/* mobile */
+@media (max-width: 500px) {
+  header.main-header.post-head.has-cover {
+    padding-bottom: 50px;
+  }
+  .header-avatar {
+    bottom: -35px;
     width: 70px;
     height: 70px;
-    bottom: -35px;
-     }
+  }
 }
+  
 .profile-title {
   display: block;
   margin: 2rem auto 1rem;  /* distanza sopra e sotto */
@@ -82,7 +108,7 @@ header.main-header.post-head::after {
 </style>
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
-<!--<h1 class="profile-title">Luca Scala</h1>-->
+<h1 class="profile-title">Luca Scala</h1>
 
 <div style="text-align:center">
   <div class="profile-location">
