@@ -76,7 +76,7 @@ Per l’elenco completo delle **pubblicazioni**, salta su [Pubblicazioni]({{ '/p
 ## Esperienza lavorativa
 
 **2022 – in corso**  
-- **Dottorando presso l’Università di Wrocław**, Wrocław (Polonia).  
+- <a href="#" class="modal-open" data-modal="modal-uwr">**Dottorando presso l’Università di Wrocław**</a>, Wrocław (Polonia).  
 Attualmente impegnato in ricerche su geometria generalizzata e approcci di double field theory alle dualità nella teoria delle stringhe.  
 Supervisori: Prof. Jerzy Kowalski-Glikman (Università di Wrocław, NCBJ Świerk); Dott. Falk Hassler (Università di Wrocław).
 
@@ -148,7 +148,7 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 
 **2025**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2025 della conferenza “Integrability, Dualities and Deformations”.  
-- Borsa di studio <a href="#" class="modal-open" data-modal="modal-santander"> **“Nagroda Santander dla studentów i doktorantów UWr 2025”** </a> per meriti scientifici, artistici e sociali.
+- Borsa di studio <a href="#" class="modal-open" data-modal="modal-santander">**“Nagroda Santander dla studentów i doktorantów UWr 2025”**</a> per meriti scientifici, artistici e sociali.
 
 **2024**  
 - Contributo di viaggio da **COST Action CA21109 (CaLISTA)**, per partecipare all’edizione 2024 del “Workshop on Noncommutative and Generalized Geometry in String theory, Gauge theory and Related Physical Models”.
@@ -168,6 +168,22 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 **2020**  
 - **Gruppo di studio extracurricolare sulle fondamenta della Relatività Generale**, Napoli.  
   Supervisore: Prof. Emerito Antonio Romano (Università di Napoli “Federico II”).
+
+<!-- UWr gallery modal -->
+<div
+  id="modal-uwr"
+  class="modal-overlay"
+  data-images="
+    {{ '/assets/images/uwr1.jpg' | relative_url }},
+    {{ '/assets/images/uwr2.jpg' | relative_url }}
+  ">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Chiudi">&times;</button>
+    <button class="modal-prev"  aria-label="Precedente">&#10094;</button>
+    <img id="modal-img" src="" alt="Campus UWr" />
+    <button class="modal-next"  aria-label="Successivo">&#10095;</button>
+  </div>
+</div>
 
 <!-- Research Group gallery modal -->
 <div
