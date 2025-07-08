@@ -10,10 +10,10 @@ location: "Wrocław, Polonia; Napoli, Italia"
 assets: /assets/images/luca.jpg
 ---
 
-<!-- 5) Titolo centrato subito dopo il default-header -->
-<h1 class="profile-title">Luca Scala</h1>
-
-<div style="text-align:center">
+<div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+  <h1 class="profile-title" style="font-size: 4rem; margin: 0 0 0.5rem;">
+    Luca Scala
+  </h1>
   <div class="profile-location">
     <i class="fas fa-map-marker-alt"></i>{{ page.location }}
   </div>
