@@ -804,6 +804,14 @@ body.nav-opened .nav {
   color: #999; /* o il colore che preferisci */
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .main-nav.overlay .site-nav {
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
     display: block;
