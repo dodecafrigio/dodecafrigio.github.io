@@ -1943,12 +1943,6 @@ body.page-template .post-title {
         padding: 5px;
         margin-bottom: 2rem;
     }
-   
-     .main-nav.overlay .site-nav {
-       max-height: 100vh;
-       overflow-y: auto;
-       -webkit-overflow-scrolling: touch;
-     }
 
 
 
