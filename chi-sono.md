@@ -14,44 +14,38 @@ bio: >-
 assets: /assets/images/luca.jpg
 ---
 
-/* 1) Rendo il header di default “spazioso” e posizionato */
 header.main-header {
   position: relative;
-  overflow: visible;    /* importante: consente al cerchio di uscire dal box */
+  overflow: visible;    
 }
 
-/* 2) Sovrascrivo il background se ho page.cover */
 header.main-header.has-cover {
   background: url('{{ page.cover | relative_url }}') center/cover no-repeat;
 }
 
-/* 3) Creo il cerchio sovrapposto con ::after */
 header.main-header.has-cover::after {
   content: "";
   position: absolute;
-  bottom: -60px;         /* metà del diametro, così esce per metà */
+  bottom: -60px;         
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;          /* diametro del cerchio */
+  width: 120px;          
   height: 120px;
   background: url('{{ page.assets | relative_url }}')
               center/cover no-repeat;
   border-radius: 50%;
-  border: 4px solid #fff;        /* bordo bianco */
+  border: 4px solid #fff;        
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 10;
 }
 
-/* 4) Spazio per il titolo appena sotto il cerchio */
 .profile-title {
-  margin-top: 80px;      /* pari all’altezza che sporge */
+  margin-top: 80px;     
   text-align: center;
   font-size: 1.75rem;
   font-weight: bold;
 }
 </style>
-
-<!-- NON reinserisco un <header> qui: uso quello di default -->
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
 <h1 class="profile-title">{{ page.name }}</h1>
