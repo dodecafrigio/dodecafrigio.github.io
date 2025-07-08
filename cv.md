@@ -71,7 +71,7 @@ Per l’elenco completo delle **pubblicazioni**, salta su [Pubblicazioni]({{ '/p
 
 **Email:** [luca.scala@uwr.edu.pl](mailto:luca.scala@uwr.edu.pl) | [l.scala.1997@gmail.com](mailto:l.scala.1997@gmail.com)  
 **ORCID:** [0000-0001-5718-323X](https://orcid.org/0000-0001-5718-323X)  
-**Gruppo di ricerca:** [fhassler.de](https://www.fhassler.de/group)  
+<a href="#" class="modal-open" data-modal="modal-group">**Gruppo di ricerca:**</a> [fhassler.de](https://www.fhassler.de/group)  
 
 ## Esperienza lavorativa
 
@@ -168,6 +168,22 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
 **2020**  
 - **Gruppo di studio extracurricolare sulle fondamenta della Relatività Generale**, Napoli.  
   Supervisore: Prof. Emerito Antonio Romano (Università di Napoli “Federico II”).
+
+<!-- Research Group gallery modal -->
+<div
+  id="modal-group"
+  class="modal-overlay"
+  data-images="
+    {{ '/assets/images/group1.jpg' | relative_url }},
+    {{ '/assets/images/group2.jpg' | relative_url }}
+  ">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Chiudi">&times;</button>
+    <button class="modal-prev"  aria-label="Precedente">&#10094;</button>
+    <img id="modal-img" src="" alt="Immagine Research Group" />
+    <button class="modal-next"  aria-label="Successivo">&#10095;</button>
+  </div>
+</div>
 
 <!-- 3) Modal-gallery markup -->
 <div
