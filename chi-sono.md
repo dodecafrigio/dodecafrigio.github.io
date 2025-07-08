@@ -4,18 +4,14 @@ title: "Chi sono"
 permalink: /chi-sono/
 current: chi-sono
 navigation: true
-
-# campi “author‐style”
 cover:  /assets/images/cover4.jpg
-logo:   /assets/images/ghost.png
+logo:   /assets/images/nahui-logo.png
 name:   "Luca Scala"
 location: "Wrocław, Polonia; Napoli, Italia"
 bio: >-
   A paranormal expert and his daughter bunk in an abandoned house
   populated by 3 mischievous ghosts and a friendly one, Casper.
 assets: /assets/images/luca.jpg
-url:    "fhassler.de"
-url_full: "https://www.fhassler.de/group"
 ---
 
 <!-- Featured header -->
@@ -64,17 +60,3 @@ url_full: "https://www.fhassler.de/group"
     {% endif %}
   </div>
 </section>
-
-<!-- Eventuale lista post -->
-<main id="content" class="content" role="main">
-  {% assign my_posts = site.posts | where: "author", "chi-sono" %}
-  {% for post in my_posts %}
-    <article class="post">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date: "%d %B %Y" }}
-      </time>
-      {{ post.excerpt }}
-    </article>
-  {% endfor %}
-</main>
