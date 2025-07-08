@@ -30,7 +30,7 @@ assets: /assets/images/luca.jpg
   .profile-block {
     text-align: center;
     /* metà dell’avatar + 1rem di gap */
-    margin-top: calc(var(--avatar-diameter) / 2 + 1rem);
+    margin-top: calc(var(--avatar-diameter) / 2 + 3rem);
     margin-bottom: 2rem;
   }
 
