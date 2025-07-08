@@ -11,11 +11,6 @@ assets: /assets/images/luca.jpg
 ---
 
 <style>
-header.post-header .post-title,
-header.post-header .page-title {
-  display: none !important;
-}
-  
 header.main-header post-head {
   position: relative;
   overflow: visible;
