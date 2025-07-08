@@ -7,7 +7,8 @@ navigation: True
 cover: '/assets/images/cover1.jpg'
 logo: '/assets/images/nahui-logo.png'
 ---
-  
+
+<style> 
 /* overlay scuro */
 .modal-overlay {
   display: none;
