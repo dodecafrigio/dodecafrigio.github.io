@@ -40,36 +40,45 @@ header.main-header.has-cover::after {
 }
 
 .profile-title {
-  margin-top: 80px;     
+  display: block;
+  margin: 2rem auto 1rem;  /* distanza sopra e sotto */
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2.5rem;       /* ingrandisci il font */
   font-weight: bold;
+  color: #333;
+  line-height: 1.2;
 }
   
+  /* nasconde il titolo predefinito in alto a sinistra */
+.page-title {
+  display: none !important;
+}
+
   /* icona + testo della location, centrati e color bio */
 .profile-location {
-  display: inline-flex;
+  display: inline-flex;      /* raggruppa icona+testo */
   align-items: center;
-  gap: 0.5rem;
-  color: #555;            /* stesso colore usato per la bio */
-  font-size: 1rem;
-  margin: 0.5rem auto 2rem;
+  gap: .5rem;
+  color: #555;
+  font-size: 2rem;
+  margin: 0 auto 2rem;       /* top=0, bottom=2rem, auto orizz. */
   text-align: center;
 }
 
 /* la classe .fas di Font Awesome già contiene font-family;
    nel caso servisse puoi aggiustare la dimensione dell’icona: */
 .profile-location .fa-map-marker-alt {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 </style>
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
 <h1 class="profile-title">{{ page.title }}</h1>
 
-<div class="profile-location">
-  <i class="fas fa-map-marker-alt"></i>
-  {{ page.location }}
+<div style="text-align:center">
+  <div class="profile-location">
+    <i class="fas fa-map-marker-alt"></i>{{ page.location }}
+  </div>
 </div>
 
 <!-- 6) Bio -->
