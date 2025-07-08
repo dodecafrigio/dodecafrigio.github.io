@@ -1,5 +1,5 @@
 ---
-layout: author
+layout: autore
 title: "Chi Sono"
 permalink: /chi-sono/
 current: chi-sono
