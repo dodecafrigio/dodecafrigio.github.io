@@ -101,3 +101,5 @@ Il nome “Cosmologie Digitali” nasce innanzitutto da un desiderio di pretenzi
 Se ti interessa sapere di più sui miei progetti di ricerca, sia in campo scientifico che artistico, salta pure su [progetti](/progetti/).
   
 Se hai domande, idee interessanti per collaborare o suggerimenti di sorta, contattami pure pigiando sulle iconcine che trovi in fondo al menù!
+
+P.S. il logo del sito è ispirato al Quinto Sole della mitologia Nahuatl, [Nahui Ollin](https://en.wikipedia.org/wiki/Nahui_Ollin)!
