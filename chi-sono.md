@@ -4,21 +4,18 @@ title: "Chi sono"
 permalink: /chi-sono/
 current: chi-sono
 navigation: true
-
-# campi autore in front-matter
-cover:   /assets/images/cover4.jpg
-logo:    /assets/images/ghost.png
+cover:   "/assets/images/cover4.jpg"
+logo:    "/assets/images/ghost.png"
 name:    "Luca Scala"
 location: "Wrocław, Polonia; Napoli, Italia"
 bio: >-
   Dottorando in geometria generalizzata e approcci di double field theory
   alle dualità nella teoria delle stringhe. Supervisori:
   Jerzy Kowalski-Glikman e Falk Hassler.
-assets:  /assets/images/luca.jpg
+assets:  "/assets/images/luca.jpg"
 url:     "fhassler.de"
-url_full:"https://www.fhassler.de/group"
+url_full: "https://www.fhassler.de/group"
 ---
-
 <style>
 /* 1) Nascondi l’header standard (non author-head) */
 header.main-header:not(.author-head) {
