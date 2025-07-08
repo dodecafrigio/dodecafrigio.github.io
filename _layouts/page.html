@@ -12,19 +12,19 @@ class: 'page-template'
 
 <style>
 /* 2.1) Rendo il header contenitore posizionato */
-    header.main-header.post-head.has-cover {
+    header.main-header.post-head {
       position: relative;
       overflow: visible;
     }
 
 /* 2.2) Sposto il titolo al centro della cover */
-    header.main-header.post-head.has-cover h1.post-title {
+    header.main-header.post-head h1.post-title {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
-      color: #fff;
+      color: #fff !important;
       text-align: center;
       width: 90%;         /* un po’ di padding orizzontale */
       font-size: 3rem;    /* regola a tuo piacere */
@@ -33,14 +33,16 @@ class: 'page-template'
     }
 
 /* 2.3) Garantisco che sia visibile se nascosto altrove */
-    header.main-header.post-head.has-cover h1.post-title {
+    header.main-header.post-head h1.post-title {
       display: block !important;
     }
 </style>
 
 <header class="main-header post-head {% if page.cover %}" style="background-image: url('{{ page.cover | relative_url }}'){% else %}no-cover{% endif %}">
+    
     <!-- 1.1) Titolo dentro la cover -->
     <h1 class="post-title">{{ page.title }}</h1>
+    
     <nav class="main-nav {% if page.cover %}overlay{% endif %} clearfix">
         {% if page.logo %}<a class="blog-logo" href="{{ '/' | relative_url }}"><img src="{{ page.logo | relative_url }}" alt="Blog Logo" /></a>{% endif %}
         {% if page.navigation %}
