@@ -82,6 +82,53 @@ class: 'page-template'
       font-size: 4rem;
     }
   }
+    /* 1) Garantisco spazio in basso al header per il titolo */
+  header.main-header.post-head.has-cover {
+    padding-bottom: 140px; /* metà avatar 120px + 20px di gap */
+  }
+  
+  /* 2) Profilo-title posizionato subito sotto il cerchio, centrato */
+  .profile-title {
+    position: absolute;
+    bottom: -40px;       /* regola per avvicinarlo al cerchio (120/2=60; 60–20=40) */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  /* 3) Location già centrata */
+  .profile-location {
+    text-align: center;
+    margin-top: 100px;   /* regola per distanziarla dal titolo */
+  }
+  
+  /* 4) Responsive: scala avatar e riposiziona titolo */
+  @media (max-width: 900px) {
+    header.main-header.post-head.has-cover {
+      padding-bottom: 100px;
+    }
+    .header-avatar { width: 90px; height: 90px; bottom: -45px; }
+    .profile-title {
+      bottom: -30px;
+      font-size: 3rem;
+    }
+    .profile-location { margin-top: 80px; }
+  }
+  @media (max-width: 500px) {
+    header.main-header.post-head.has-cover {
+      padding-bottom: 80px;
+    }
+    .header-avatar { width: 70px; height: 70px; bottom: -35px; }
+    .profile-title {
+      bottom: -25px;
+      font-size: 2.4rem;
+    }
+    .profile-location { margin-top: 60px; }
+  }
 </style>
 
 <header
