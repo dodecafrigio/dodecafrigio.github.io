@@ -14,6 +14,7 @@ bio: >-
 assets: /assets/images/luca.jpg
 ---
 
+<style>
 header.main-header {
   position: relative;
   overflow: visible;    
