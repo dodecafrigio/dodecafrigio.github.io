@@ -71,7 +71,7 @@ Per l’elenco completo delle **pubblicazioni**, salta su [Pubblicazioni]({{ '/p
 
 **Email:** [luca.scala@uwr.edu.pl](mailto:luca.scala@uwr.edu.pl) | [l.scala.1997@gmail.com](mailto:l.scala.1997@gmail.com)  
 **ORCID:** [0000-0001-5718-323X](https://orcid.org/0000-0001-5718-323X)  
-**INSPIRE:** [Luca Scala](https://inspirehep.net/authors/2086448)     
+**Inspire:** [Luca Scala](https://inspirehep.net/authors/2086448)     
 <a href="#" class="modal-open" data-modal="modal-group">**Gruppo di ricerca:**</a> [fhassler.de](https://www.fhassler.de/group)  
 
 ## Esperienza lavorativa
