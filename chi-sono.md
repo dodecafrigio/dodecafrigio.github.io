@@ -82,7 +82,7 @@ header.main-header.post-head::after {
 </style>
 
 <!-- 5) Titolo centrato subito dopo il default-header -->
-<h1 class="profile-title">Luca Scala</h1>
+<!--<h1 class="profile-title">Luca Scala</h1>-->
 
 <div style="text-align:center">
   <div class="profile-location">
