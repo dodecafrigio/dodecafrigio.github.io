@@ -21,12 +21,6 @@ logo:   /assets/images/nahui-logo.png
 
 <!-- 2) CSS inline per l’header con titoli + icone a destra -->
 <style>
-
-header.post-header .post-title,
-header.post-header .page-title {
-  display: none !important;
-}
-  
 .pub-header {
   display: flex;
   align-items: center;
