@@ -174,7 +174,7 @@ Talk intitolato: “Half-maximal gauged supergravities from 10d heterotic DFT”
   id="modal-group"
   class="modal-overlay"
   data-images="
-    {{ '/assets/images/group1.jpg' | relative_url }},
+    {{ '/assets/images/group1.webp' | relative_url }},
     {{ '/assets/images/group2.jpg' | relative_url }}
   ">
   <div class="modal-content">
